@@ -11,8 +11,8 @@
 //         });
 
 
-let duration = 200;
-let easing = "swing";
+const duration = 600;
+const easing = "swing";
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 600) {
         $(".item1").animate({ "padding-right": "70%", "opacity": "1" }, duration, easing);
@@ -63,3 +63,4 @@ $(document).scroll(function () {
         $('.header-top').css('background-color', '#fff');
     }
 });
+
