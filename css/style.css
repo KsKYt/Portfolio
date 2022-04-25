@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 * {
-	font-family: 'Noto Serif Display', serif;
-	font-family: 'Noto Serif JP', serif;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
-h2, h1, p {
-	font-family: 'Noto Serif JP', serif;
+h2,
+h1,
+p {
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 body {
@@ -36,8 +37,14 @@ header {
 	transition: all 0.5s;
 }
 
+.top {
+	background-image: url("../img/topimg.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
 .header_inner {
-	padding:  0 20px 0 20px;
+	padding: 0 20px 0 20px;
 	max-width: 1500px;
 	height: 127px;
 	margin: 0 auto;
@@ -52,7 +59,14 @@ header {
 }
 
 .header-nav {
+
 	width: 300px;
+
+}
+
+.header-nav li {
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
 }
 
 .header-nav ul {
