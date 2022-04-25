@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Noto Serif Display', serif;
+	font-family: 'Noto Serif JP', serif;
+}
+
+h2, h1, p {
+	font-family: 'Noto Serif JP', serif;
+}
+
+body {
+	margin: 127px 0 0 0;
+	background-color: #7F066B;
+
+
+}
+
+header img {
+	width: 150px;
+
+}
+
+header {
+
+	width: 100%;
+	height: 127px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.header_inner {
+
+	max-width: 1500px;
+	height: 127px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_inner a {
+	color: black;
+	text-decoration: none;
+}
+
+.header-nav {
+	width: 300px;
+}
+
+.header-nav ul {
+	display: flex;
+
+	justify-content: space-between;
+}
+
+
+.top {
+
+	font-size: 50px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+	/*描画位置※位置は適宜調整してください*/
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	/*全体の高さ*/
+	height: 50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+	/*描画位置*/
+	position: absolute;
+	left: -15px;
+	top: -15px;
+	/*テキストの形状*/
+	color: #eee;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+	content: "";
+	/*描画位置*/
+	position: absolute;
+	top: 0;
+	/*線の形状*/
+	width: 1px;
+	height: 30px;
+	background: #eee;
+	/*線の動き1.4秒かけて動く。永遠にループ*/
+	animation: pathmove 1.4s ease-in-out infinite;
+	opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+	0% {
+		height: 0;
+		top: 0;
+		opacity: 0;
+	}
+
+	30% {
+		height: 30px;
+		opacity: 1;
+	}
+
+	100% {
+		height: 0;
+		top: 50px;
+		opacity: 0;
+	}
+}
+
+.skill {
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.skill ul {
+	list-style: none;
+	margin-right: 300px;
+	font-size: 30px;
+
+}
+
+.item1 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: chocolate;
+
+}
+
+.item2 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: rgb(247, 150, 81);
+}
+
+.item3 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: chocolate;
+}
+
+.item4 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: chocolate;
+}
+
+.item5 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: chocolate;
+}
+
+.item6 {
+	margin-top: 30px;
+	width: 600px;
+	background-color: chocolate;
+}
+
+.works {
+	width: 100%;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.works li:hover {
+	opacity: 0.7;
+}
+
+.works h2 {
+	margin-top: 100px;
+}
+
+.works ul {
+	display: flex;
+	align-content: center;
+}
+
+.works li {
+	display: flex;
+	text-align: center;
+}
+
+.works img {
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
