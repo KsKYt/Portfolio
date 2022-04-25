@@ -37,7 +37,7 @@ header {
 }
 
 .header_inner {
-
+	padding:  0 20px 0 20px;
 	max-width: 1500px;
 	height: 127px;
 	margin: 0 auto;
