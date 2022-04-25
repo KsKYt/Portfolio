@@ -15,7 +15,7 @@ const duration = 600;
 const easing = "swing";
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 600) {
-        $(".item1").animate({ "padding-right": "70%", "opacity": "1" }, duration, easing);
+        $(".item1").animate({ "padding-right": "600px", "opacity": "1" }, duration, easing);
     }
 });
 

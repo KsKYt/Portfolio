@@ -10,9 +10,35 @@ p {
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
+html,
+body {
+	height: 100%;
+	/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js {
+	position: fixed;
+	/*描画固定*/
+	z-index: -1;
+	/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	/*背景色*/
+}
+
+#wrapper {
+	position: relative;
+	/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;
+	/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	margin: 127px 0 0 0;
-	background-color: #f9ffaa;
+	background-color: #111111;
 
 
 }
@@ -23,10 +49,8 @@ header img {
 }
 
 header {
-
 	width: 100%;
 	height: 127px;
-	background-color: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -37,11 +61,6 @@ header {
 	transition: all 0.5s;
 }
 
-.top {
-	background-image: url("../img/topimg.png");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
 
 .header_inner {
 	padding: 0 20px 0 20px;
@@ -78,8 +97,8 @@ header {
 
 .top {
 	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-	font-size: 50px;
+	font-weight: bold;
+	font-size: 70px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -156,54 +175,7 @@ header {
 
 }
 
-.skill ul {
-	list-style: none;
-	margin-right: 300px;
-	font-size: 30px;
 
-}
-
-.item1 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: chocolate;
-	transition: 0.5s;
-}
-
-.item2 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: rgb(247, 150, 81);
-	transition: 0.5s;
-}
-
-.item3 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: chocolate;
-	transition: 0.5s;
-}
-
-.item4 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: chocolate;
-	transition: 0.5s;
-}
-
-.item5 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: chocolate;
-	transition: 0.5s;
-}
-
-.item6 {
-	margin-top: 30px;
-	width: 600px;
-	background-color: chocolate;
-	transition: 0.5s;
-}
 
 .works {
 	width: 100%;
